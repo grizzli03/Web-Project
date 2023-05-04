@@ -4,7 +4,7 @@ from category.models import Category
 
 class Book(models.Model):
     '''
-    Available books
+    Available books (online pdf format)
     '''
     author = models.CharField(max_length=150)
     title = models.CharField(max_length=250)
