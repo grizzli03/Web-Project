@@ -49,3 +49,5 @@ class BookCreateSerializer(serializers.ModelSerializer):
         images_object = [BookImages(book=created_book, image=image) for image in images_data.getlist('images')]
         BookImages.objects.bulk_create(images_object)
         return created_book
+
+    
