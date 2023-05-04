@@ -8,6 +8,7 @@ from books.models import Book
 User = get_user_model()
 
 
+
 class Mark:
     one = 1
     two = 2
