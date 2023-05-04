@@ -37,9 +37,8 @@ class BookViewSet(ModelViewSet):
         
         if self.action in ('create', 'update', 'partial_update', 'destroy',):
             return (permissions.IsAdminUser(),)
-        
         else:
-            return [permissions.AllowAny()]
+            return (permissions.AllowAny(),)
 
 
     # api/v1/books/<id>/reviews/
